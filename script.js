@@ -3,7 +3,7 @@ document.getElementById('search').addEventListener(
         const location = document.getElementById('inputLocation').value;
         const key = '845d3af148a57fcac391b90678992d28';
 
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${key}`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${key}`)
         .then(res => res.json())
         .then(data => {
           const weatherIconGet = data.weather[0].icon
@@ -18,5 +18,3 @@ document.getElementById('search').addEventListener(
         })
     }
 )
-
-//&deg;C
